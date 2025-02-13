@@ -22,11 +22,7 @@ ln -s ~/.config/wezterm/wezterm.lua ~/.wezterm.lua
 
 #### **Ubuntu (Debian-based distros)**
 
-```bash
-wget https://github.com/wez/wezterm/releases/latest/download/WezTerm-Ubuntu.zip
-unzip WezTerm-Ubuntu.zip -d wezterm
-sudo mv wezterm/* /usr/local/bin/
-```
+For detailed instructions, see [ubuntu_install.md](ubuntu_install.md).
 
 #### **Arch Linux (via AUR)**
 
@@ -110,21 +106,7 @@ end)
 
 ## ⌨️ Keybindings
 
-### **Tabs Navigation**
-
-| Key Combination    | Action             |
-| ------------------ | ------------------ |
-| `Ctrl + Shift + T` | Open Tab Navigator |
-| `Ctrl + Shift + R` | Rename Current Tab |
-| `Ctrl + Shift + ,` | Open Config in Vim |
-
-### **Font Size Adjustments**
-
-| Key Combination        | Action             |
-| ---------------------- | ------------------ |
-| `Ctrl + Shift + Plus`  | Increase Font Size |
-| `Ctrl + Shift + Minus` | Decrease Font Size |
-| `Ctrl + Shift + 0`     | Reset Font Size    |
+See the [wezterm_cheatsheet.md](wezterm_cheatsheet.md) file for a list of keybindings.
 
 ---
 

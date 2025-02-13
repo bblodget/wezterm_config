@@ -128,18 +128,6 @@ end)
 
 ---
 
-## 🖱️ Mouse Bindings (Not Supported)
-
-We attempted to configure **Ctrl + Scroll Wheel** for font size adjustments, but WezTerm **does not support mouse wheel bindings**. Instead, use:
-
-```lua
-{ key = '=', mods = 'CTRL', action = act.IncreaseFontSize },
-{ key = '-', mods = 'CTRL', action = act.DecreaseFontSize },
-{ key = '0', mods = 'CTRL', action = act.ResetFontSize },
-```
-
----
-
 ## 🔗 Additional Resources
 
 - [WezTerm Official Docs](https://wezfurlong.org/wezterm/)

@@ -14,6 +14,9 @@ git clone https://github.com/bblodget/wezterm_config.git ~/.config/wezterm
 
 # Create symbolic link
 ln -s ~/.config/wezterm/wezterm.lua ~/.wezterm.lua
+
+# Start WezTerm
+wezterm
 ```
 
 ## 📥 Installation
@@ -46,28 +49,6 @@ OR
 
 ```powershell
 choco install wezterm
-```
-
----
-
-## 🔧 Setup
-
-### **1. Clone this repository**
-
-```bash
-git clone https://github.com/YOUR_USERNAME/wezterm_config.git ~/.wezterm
-```
-
-### **2. Symlink the configuration file**
-
-```bash
-ln -sf ~/.wezterm/wezterm.lua ~/.wezterm.lua
-```
-
-### **3. Restart WezTerm**
-
-```bash
-wezterm
 ```
 
 ---

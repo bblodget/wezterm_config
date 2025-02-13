@@ -1,4 +1,5 @@
 -- References
+-- https://ansidev.xyz/posts/2023-05-18-wezterm-cheatsheet
 -- https://wezfurlong.org/wezterm/config/default-keys.html?h=config+keys
 
 -- Pull in the wezterm API

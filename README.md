@@ -25,7 +25,7 @@ wezterm
 
 #### **Ubuntu (Debian-based distros)**
 
-For detailed instructions, see [ubuntu_install.md](ubuntu_install.md).
+[Using the Apt repo](https://wezterm.org/install/linux.html)
 
 #### **Arch Linux (via AUR)**
 

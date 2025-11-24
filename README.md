@@ -36,17 +36,24 @@ wezterm
 
 This config provides:
 
-- **AdventureTime** color scheme
+- **Gruvbox Dark** color scheme (warm, retro colors - easy on eyes)
 - **FiraCode Nerd Font Mono** - includes programming ligatures and icons
 - **Shift+Enter** for multi-line input (added by Claude Code's `/terminal-setup`)
 - Minimal setup - no tab navigation (using tmux instead)
 
 ### Color Scheme
 
+Currently using **Gruvbox Dark** - warm browns/oranges, excellent for reducing eye strain and better sleep hygiene.
+
+**Favorite color schemes:**
+- `Gruvbox Dark (Gogh)` - Warm, retro, best for sleep hygiene
+- `Kanagawa (Gogh)` - Japanese-inspired, artistic, muted warm tones
+
 Change the color scheme by modifying `wezterm.lua`:
 
 ```lua
-config.color_scheme = 'AdventureTime'
+config.color_scheme = 'Gruvbox Dark (Gogh)'
+-- Or try: config.color_scheme = 'Kanagawa (Gogh)'
 ```
 
 Browse available schemes at [WezTerm Color Schemes](https://wezfurlong.org/wezterm/colorschemes/)

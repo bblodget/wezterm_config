@@ -1,111 +1,43 @@
 # WezTerm Configuration
 
-This repository contains my **WezTerm configuration** for easy setup and portability across machines. It includes:
+Minimal WezTerm configuration optimized for use with tmux.
 
-- A customized `wezterm.lua` configuration file
-- Keybindings for productivity
-- Custom settings for appearance and behavior
+## Installation
 
-## ⚡ Quick Start
+### Install WezTerm (Debian-based distros)
+
+[Using the Apt repo](https://wezterm.org/install/linux.html)
+
+### Install Config
 
 ```bash
 # Clone the repository
 git clone https://github.com/bblodget/wezterm_config.git ~/.config/wezterm
 
-# Create symbolic link
-ln -s ~/.config/wezterm/wezterm.lua ~/.wezterm.lua
-
 # Start WezTerm
 wezterm
 ```
 
-## 📥 Installation
+## Configuration
 
-### **1. Install WezTerm**
+This config provides:
 
-#### **Ubuntu (Debian-based distros)**
+- **AdventureTime** color scheme
+- **Shift+Enter** for multi-line input (added by Claude Code's `/terminal-setup`)
+- Minimal setup - no tab navigation (using tmux instead)
 
-[Using the Apt repo](https://wezterm.org/install/linux.html)
+### Color Scheme
 
-#### **Arch Linux (via AUR)**
-
-```bash
-yay -S wezterm
-```
-
-#### **MacOS (via Homebrew)**
-
-```bash
-brew install --cask wezterm
-```
-
-#### **Windows (via Scoop or Chocolatey)**
-
-```powershell
-scoop install wezterm
-```
-
-OR
-
-```powershell
-choco install wezterm
-```
-
----
-
-## 🎨 Customizations
-
-### **Color Scheme**
-
-- Uses **AdventureTime** color scheme (modify in `wezterm.lua`).
-- You can change it by modifying:
+Change the color scheme by modifying `wezterm.lua`:
 
 ```lua
 config.color_scheme = 'AdventureTime'
 ```
 
-### **Opacity**
+Browse available schemes at [WezTerm Color Schemes](https://wezfurlong.org/wezterm/colorschemes/)
 
-- Uncomment this line in `wezterm.lua` to enable a **semi-transparent** background:
-
-```lua
-config.window_background_opacity = 0.80
-```
-
-### **Maximized Window on Startup**
-
-- Ensures WezTerm **starts maximized** automatically:
-
-```lua
-wezterm.on('gui-startup', function(cmd)
-  local tab, pane, window = mux.spawn_window(cmd or {})
-  window:gui_window():maximize()
-end)
-```
-
----
-
-## ⌨️ Keybindings
-
-See the [wezterm_cheatsheet.md](wezterm_cheatsheet.md) file for a list of keybindings.
-
----
-
-## 🔗 Additional Resources
+## Resources
 
 - [WezTerm Official Docs](https://wezfurlong.org/wezterm/)
-- [WezTerm Keybindings](https://wezfurlong.org/wezterm/config/default-keys.html)
-- [WezTerm Color Schemes](https://wezfurlong.org/wezterm/colorschemes/)
-
----
-
-## 🤝 Contributing
-
-Feel free to fork this repo and submit **pull requests** for improvements or personal tweaks!
-
----
-
-## 📜 License
-
-MIT License - Free to use and modify. 🚀
+- [WezTerm Default Keybindings](https://wezfurlong.org/wezterm/config/default-keys.html)
 
